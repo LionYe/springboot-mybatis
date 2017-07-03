@@ -106,9 +106,9 @@ spring.velocity.requestContextAttribute=rc
 ### 3.4、数据库配置
 ```
 tomcat.datasource.username=root
-tomcat.datasource.password=witsSQL2016
+tomcat.datasource.password=root
 tomcat.datasource.driverClassName=com.mysql.jdbc.Driver
-tomcat.datasource.url=jdbc:mysql://127.0.0.1:3306/YanHuiMap?useUnicode\=true&characterEncoding\=utf8
+tomcat.datasource.url=jdbc:mysql://127.0.0.1:3306/blood?useUnicode\=true&characterEncoding\=utf8
 tomcat.datasource.maxActive=100
 tomcat.datasource.maxIdle=8
 tomcat.datasource.minIdle=8
@@ -124,6 +124,7 @@ mybatis.config-locations=classpath:mybatis-config.xml
 mybatis.mapper-locations=classpath:mapper/*.xml
 
 注：这种方式声明只有在spring-boot 1.4.*后才可以进行使用
+    1.3.X可用config包下的MybatisConfig进行java注入配置
 ```
 联系方式：
 <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PQ8KCwkJCwsKCH1MTBNeUlA" style="text-decoration:none;">
