@@ -70,7 +70,7 @@ application.properties：
 【
 application-dev.properties：开发环境
 application-test.properties：测试环境
-application-prod.properties：生产环境
+application-pro.properties：生产环境
 】
 ```
 ### 3.1、端口，服务名配置
@@ -83,14 +83,19 @@ spring.jmx.enabled=false
 ### 3.2、日志配置
 
 ```
-#log Configuration way 1 
+#log Configuration way 1 [*推荐使用way 1]
 logging.config=classpath:log4j-dev.properties
  
 #log Configuration way 2 以java配置方式注入日志
 log4j.path=log4j-dev.properties
+
+日志亦可利用dev,test,pro 设置不同开发环境
+log4j-dev.properties
+log4j-test.properties
+log4j-pro.properties
 ```
 
-日志祥情  可查看上一篇文章；
+日志祥情  可查看如下文章：http://note.youdao.com/noteshare?id=efd3737e66b91e3299a91aa7a345e05e&sub=94ABA0BFF2714059A9D5C6CE06AC6212；
 
 ### 3.3、velocity模板引擎配置
 ```
